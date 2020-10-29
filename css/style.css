@@ -1,0 +1,258 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+}
+html, body {
+    background: url(../img/wallpaper.png) no-repeat center center;
+    background-size: 1536px;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    overflow: auto;
+}
+div.interface {
+    margin-left: 20%;
+}
+.sidebar {
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    background-image: linear-gradient(#009d71cb, #003253dc);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+    z-index: 1;
+}
+.sidebar-pos {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+.img-sidebar {
+    text-align: center;
+}
+.img-sidebar img {
+    width: 100%;
+    border: 4px solid #06ca92;
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+}
+.menu {
+    margin: 20px;
+    text-align: center;
+}
+.menu a {
+    color: white;
+    opacity: 0.4;
+    font-size: 24px;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    transition: opacity 0.8s;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, .8);
+}
+.menu a:hover, .menu a.selected  {
+    opacity: 1;    
+}
+.icons-social {
+    position: absolute;
+    right: 3%;
+    top: -30px;
+}
+.icons-social a {
+    text-decoration: none;
+    color: white;
+    background-color: #06ca92;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 20px 10px;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .8);
+}
+.icons-social i {
+    line-height: 40px;
+}
+header.cabecalho {
+    width: auto;
+    position: relative;
+    border-bottom: 1px #e0e0e0 solid;
+    padding-left: 20px;
+    height: 100px;
+    text-align: start;
+    margin: 50px 10px 0px 10px;
+    display: block;
+    right: 0px;
+    color: #e0e0e0;
+}
+.cabecalho h1 {
+    font-size: 42px;
+}
+.cabecalho h1 span {
+    color: #06ca92;
+}
+.bloco1 {
+    background: #e0e0e0;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+}
+.bloco2 {
+    background: #e0e0e0;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+}
+.secao {
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    /*padding-top: 80px;
+    display: flex;
+    width: auto;
+    height: auto;
+    position: relative;*/
+}
+@media (max-width: 787px) {
+    .secao {
+        height: 140vh;
+
+    }
+}
+.secao div h3 {
+    background: black;
+    color: white;
+    top: 140px;
+    position: absolute;
+    left: 10px;
+    padding: 0px 10px 0px 10px;
+    font-style: italic;
+    color: #02d89a;
+}
+.secao div {
+    flex: 1 1 250px;
+    max-width: 250px;
+    height: 400px;
+    margin: 10px;
+    /*min-width: 180px;
+    width: 250px;
+    height: 250px;
+    margin: 150px auto 100px auto;*/
+    position: relative;
+    background-image: linear-gradient(#0e0f1eb9, #1a5c9298);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+}
+.secao div p {
+    margin: 165px 10px 0px 10px;
+    color: white;
+}
+.tecnica img, .habilidades img, .etica img {
+    position: absolute;
+    top: 0px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+    display: block;
+}
+footer#rodape {
+    width: 100%;
+    color: #e0e0e0;
+    font-style: italic;
+    bottom: 0px;
+}
+@media (max-width: 800px) {
+    .secao {
+        height: 190vh;
+        padding-top: 70px;
+    }
+    div.interface {
+        margin-left: 0px;
+        margin-top: -15px;
+    }
+    .sidebar {
+        height: 50px;
+        top: 135px;
+        width: 100%;
+        position: relative;
+    }
+    .sidebar-pos {
+        top: 0px;
+        left: 0%;
+        transform: translateY(0%);
+        height: 50px;
+    }
+    .img-sidebar {
+        text-align: left;
+    }
+    .img-sidebar img {
+        width: 22%;
+        border: 2px solid #06ca92;
+        top: -105px;
+        position: absolute;
+        left: 5%;
+    }
+    .menu {
+        margin: 12px;
+        text-align: center;
+        display: flex;
+        position: relative;
+        width: auto;
+        left: 20%;
+    }
+    .menu a {
+        font-size: 20px;
+        display: inline-block;
+        margin: auto;
+        position: relative;
+        width: auto;
+    }
+    header.cabecalho {
+        height: 100px;
+        text-align: center;
+        margin: 0px 10px 0px 10px;
+        display: block;
+        right: 0px;
+    }
+    .cabecalho h1 h2 {
+        left: -50px;
+    }
+    .icons-social {
+        display: none;
+    }
+    /*.secao {
+        margin: 50px auto 0px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+        height: auto;
+        width: 100%;
+        padding: 80px auto 0px auto;
+
+    }
+    .secao div {
+        position: relative;
+        width: 300px;
+        margin: 150px auto 50px auto;
+        height: 200px;
+        transform: translateX(50%);
+    }
+    .secao div img {
+        width: 300px;
+    }
+    .secao div p {
+        position: absolute;
+        margin: 20px 10px 0px 10px;
+    }*/
+}
